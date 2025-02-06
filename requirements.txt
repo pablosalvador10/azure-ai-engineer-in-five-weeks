@@ -59,3 +59,12 @@ azure-identity
 azure-ai-inference
 azure-ai-evaluation
 plotly
+
+
+## Added in Week 4
+azure-monitor-opentelemetry 
+opentelemetry-exporter-otlp 
+opentelemetry-instrumentation-httpx
+pymongo 
+azure-core 
+azure-cosmos
