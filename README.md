@@ -1,5 +1,12 @@
 # <img src="./utils/images/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>  Azure AI Engineering in 5 Weeks
 
+## 🌐 Available Languages
+
+- [🇺🇸 English](./README.md) ← You are here
+- [🇪🇸 Español](./README.es.md)
+
+> 📖 **Quick Navigation**: Visit [LANGUAGES.md](./LANGUAGES.md) for a complete overview of all available materials in both languages.
+
 Welcome to the Azure AI Engineering in 5 Weeks repository. This repository is designed to accelerate your journey in mastering Azure AI services. By working through these resources, you'll become a skilled AI practitioner capable of developing advanced AI solutions with Azure.
 
 <p align="center">
@@ -22,7 +29,7 @@ This repository is organized to enhance your learning experience by structuring 
 
 - **`src/`**: Reusable and modular code for exercises and projects throughout the five weeks.
 
-> **Note**: Visit the [CURRICULUM](./CURRICULUM.md) for a detailed, week-by-week plan.
+> **Note**: Visit the [CURRICULUM](./CURRICULUM.md) for a detailed, week-by-week plan. [Spanish version available here](./CURRICULUM.es.md).
 ## 🚀 Getting Started
 
 **1. Fork the repository**:

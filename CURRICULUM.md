@@ -1,5 +1,10 @@
 # Azure AI Engineering in 5 Weeks - Curriculum 🚀
 
+## 🌐 Available Languages
+
+- [🇺🇸 English](./CURRICULUM.md) ← You are here
+- [🇪🇸 Español](./CURRICULUM.es.md)
+
 Welcome to the Azure AI Engineering in 5 Weeks curriculum. This guide will help you navigate through the weekly lessons, labs, and quizzes designed to enhance your skills in Azure AI services.
 
 # Table of Contents 📅

@@ -1,5 +1,10 @@
 # Week 2: Designing Intelligent Cloud-Native AI Systems 🛠️
 
+## 🌐 Available Languages
+
+- [🇺🇸 English](./README.md) ← You are here
+- [🇪🇸 Español](./README.es.md)
+
 ## Table of Contents 📑
 - [Overview](#overview-📋)
 - [Learning Objectives](#learning-objectives-🎯)

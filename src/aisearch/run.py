@@ -678,29 +678,38 @@ class IndexerRunner:
 
             if status:
                 logger.info(f"Indexer Status: {status.status}")
-                logger.info(f"Last Run Time: {status.last_result.end_time}")
-                logger.info(f"Execution Status: {status.last_result.status}")
+                
+                # Check if last_result exists before accessing its properties
+                if status.last_result:
+                    logger.info(f"Last Run Time: {status.last_result.end_time}")
+                    logger.info(f"Execution Status: {status.last_result.status}")
+                else:
+                    logger.info("Last Run Time: No previous runs")
+                    logger.info("Execution Status: No previous runs")
 
                 if status.status == "running":
-                    if status.last_result.status == "inProgress":
+                    if status.last_result and status.last_result.status == "inProgress":
                         logger.info(
                             "Indexer is still running... waiting for completion."
                         )
-                    elif status.last_result.status == "success":
+                    elif status.last_result and status.last_result.status == "success":
                         logger.info(
                             f"Indexer '{self.indexer_name}' completed successfully."
                         )
                         break
-                    elif status.last_result.status == "error":
+                    elif status.last_result and status.last_result.status == "error":
                         logger.error(
                             f"Indexer '{self.indexer_name}' encountered errors: {status.last_result.errors}"
                         )
                         break
-                    else:
+                    elif status.last_result:
                         logger.warning(
                             f"Indexer '{self.indexer_name}' has an unknown execution status: {status.last_result.status}"
                         )
                         break
+                    else:
+                        logger.info("Indexer is running but no previous result available yet...")
+                        # Continue monitoring
                 elif status.status == "success":
                     logger.info(
                         f"Indexer '{self.indexer_name}' completed successfully."
@@ -716,8 +725,9 @@ class IndexerRunner:
                     )
                     break
                 elif status.status == "error":
+                    error_details = status.last_result.errors if status.last_result else "No error details available"
                     logger.error(
-                        f"Indexer '{self.indexer_name}' encountered an error: {status.last_result.errors}"
+                        f"Indexer '{self.indexer_name}' encountered an error: {error_details}"
                     )
                     break
                 else:
