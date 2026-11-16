@@ -38,11 +38,11 @@ Este repositorio está organizado para mejorar tu experiencia de aprendizaje est
 
 **2. Clona tu repositorio forkeado**:
    ```bash
-   git clone https://github.com/tunombredeusuario/azure-ai-engineering-5-weeks.git
+   git clone https://github.com/tunombredeusuario/azure-ai-engineer-in-five-weeks.git
    ```
 **3. Navega a la carpeta de la semana en la que estás trabajando**:
    ```bash
-   cd azure-ai-engineering-5-weeks/weeks/week-1
+   cd azure-ai-engineer-in-five-weeks/weeks/week-1
    ```
 **4. Sigue las instrucciones**:
    - Abre el archivo `README.md` en la carpeta para obtener instrucciones detalladas.

@@ -6,6 +6,11 @@ This file meticulously documents all noteworthy changes made to this project.
 
 > **Versioning Protocol**: The project strictly adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (SemVer). SemVer is a versioning scheme for software that aims to convey meaning about the underlying changes with each new release. For details on the version numbering convention, please refer to the [official SemVer specification](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+- Corrected the clone URL and local folder name in the English and Spanish getting-started instructions.
+
 ## [0.0.1] - 2024-12-28
 
 ### Added
